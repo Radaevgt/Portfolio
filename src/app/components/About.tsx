@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/Portfolio" : "";
+
 const interests = [
   "Claude Code / AI Agents",
   "RAG-системы",
@@ -38,7 +40,7 @@ export default function About() {
           >
             <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-2xl bg-gradient-to-br from-cyan to-violet p-[2px]">
               <Image
-                src="/photo.png"
+                src={`${BASE_PATH}/photo.png`}
                 alt="Глеб Радаев"
                 width={320}
                 height={320}
