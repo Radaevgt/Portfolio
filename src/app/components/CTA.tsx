@@ -19,6 +19,11 @@ const certificates = [
     description: "Курс по Claude от Anthropic",
     href: "https://drive.google.com/file/d/1Fo9ue-sy0GpySnxfrlgOkcmvIpouhY7G/view?usp=sharing",
   },
+  {
+    title: "Диплом хакатона Альфа-Банка",
+    description: "Участие в хакатоне Альфа-Банка 2025",
+    href: "https://drive.google.com/file/d/1gs8174rRFHGA3UlwHaAvFgui7jYnbkR4/view?usp=sharing",
+  },
 ];
 
 export default function CTA() {
@@ -52,7 +57,7 @@ export default function CTA() {
           <h3 className="text-sm font-[family-name:var(--font-heading)] text-cyan mb-6 tracking-wider uppercase text-center">
             Сертификаты и документы
           </h3>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {certificates.map((cert) => (
               <a
                 key={cert.title}
